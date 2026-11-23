@@ -11,6 +11,8 @@ from math import isfinite
 
 def tags_for(resource):
     """Return distinct tags, treating missing or None tags as empty."""
+    if isinstance(resource, (set, frozenset)):
+        return set(resource)
     tags = resource.get("tags")
     if tags is None:
         return set()

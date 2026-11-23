@@ -1,6 +1,6 @@
 """Supplied console presentation; scoring and ranking stay in student main.py."""
 
-from console_style import print_color
+from console_styles import print_color
 
 
 def show_baseline(rows):

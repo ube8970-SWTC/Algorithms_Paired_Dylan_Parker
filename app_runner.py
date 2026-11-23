@@ -4,7 +4,7 @@ from copy import deepcopy
 from resource_data import RESOURCES, PROFILE, WEIGHTS, LIMIT, LIMITATION_ID
 from resource_support import tags_for
 from resource_display import show_baseline, show_ranking, show_change, same_recommendations, show_digest_pair
-from console_style import print_color
+from console_styles import print_color
 
 
 def run(stage, shared_count, jaccard, rank_resources=None, catalog_digest=None):
